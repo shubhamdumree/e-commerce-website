@@ -457,6 +457,51 @@ styling of first navbar */
   font-family: "inter-semibold";
 }
 
+/* styling of add-to-cart-section */
+.addcart{
+  border-top: none;
+  height: 69rem;
+  margin-top: 1rem;
+  background-size: initial;
+  background-color: #E4E4E4;
+}
+
+.girl-model{
+  height: 55rem;
+  padding-left: 2.5rem;
+  padding-top: 3rem;
+}
+
+.title-cart {
+  float: right;
+  padding-right: 18rem;
+  margin-top: -35rem;
+}
+
+.title-heading-cart {
+  font-family: "inter-bold";
+  font-size: 6.5rem;
+  font-weight: bolder;
+  letter-spacing: -0.009rem;
+}
+
+.title-sub-heading-cart {
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: #888;
+  letter-spacing: 2px;
+}
+
+.cta-cart1{
+  font-family: "inter-semibold";
+  font-size: 1.6rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+}
+
 /* styling of the newsletter section */
 .newsletter {
   border-top: none;
@@ -591,3 +636,72 @@ styling of first navbar */
     font-weight: lighter;
     color: gray;
 }
+
+/* styling of men's product page */
+.products-men{
+  border-top: none;
+  height: 275rem;
+  margin-top: 2rem;
+  background-size: initial;
+}
+
+.page-title-men{
+  font-size: 2rem;
+  font-family: "inter-extrabold";
+  padding-left: 4.7rem;
+  text-decoration: underline;
+}
+
+.page-info-des{
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  font-family: 'inter-regular';
+}
+
+.container_grid1 {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bestseller-tag1 {
+  font-family: "inter-extrabold";
+  font-size: 1.6rem;
+  padding-top: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.bestseller-name1 {
+  font-family: "inter-semibold";
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.bestseller-price1 {
+  font-size: 1.2rem;
+  font-family: "inter-semibold";
+}
+
+.cta-buy{
+  margin-left: 18rem;
+  font-family: "inter-semibold";
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+}
+
+.page-quote-men{
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+  font-family: 'inter-regular';
+}
+
