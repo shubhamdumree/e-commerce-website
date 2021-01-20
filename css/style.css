@@ -637,7 +637,7 @@ styling of first navbar */
     color: gray;
 }
 
-/* styling of men's product page */
+/* styling of men's clothing page */
 .products-men{
   border-top: none;
   height: 275rem;
@@ -705,3 +705,18 @@ styling of first navbar */
   font-family: 'inter-regular';
 }
 
+/* styling of women's clothing page */
+.products-women{
+  border-top: none;
+  height: 350rem;
+  margin-top: 2rem;
+  background-size: initial;
+}
+
+/* styling of accessories page */
+.products-accessories{
+  border-top: none;
+  height: 260rem;
+  margin-top: 2rem;
+  background-size: initial;
+}
