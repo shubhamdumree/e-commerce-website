@@ -1,1 +1,593 @@
-{\rtf1}
+/* importing custom fonts to be used */
+@font-face {
+  font-family: "inter-semibold";
+  src: url(../fonts/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "inter-bold";
+  src: url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "inter-extrabold";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "inter-regular";
+  src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "inter-medium-italic";
+  src: url(../fonts/Inter-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "inter-semibold-italic";
+  src: url(../fonts/Inter-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "SF Display";
+  src: url(../applefont/SanFranciscoDisplay-Semibold.otf);
+}
+
+/*common css tag to remove any spacing before applying the css to each section*/
+
+*,
+* ::before,
+* ::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* common css tag */
+html {
+  font-size: 10px;
+  font-family: "SF Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 88rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+  height: 7.4rem;
+  width: 100%;
+  background-color: black;
+}
+
+/* home css 
+styling of first navbar */
+
+.nav-list {
+  padding-top: 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-family: "inter-extrabold";
+  color: #fff;
+  transition: opacity 0.5s;
+  padding-right: 13rem;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  font-family: "inter-semibold-italic";
+  font-weight: lighter;
+  color: #fff;
+  padding: 1.5rem;
+  transition: opacity 0.5s;
+}
+
+/* effect on link when cursor is placed */
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.about {
+  padding-right: 5rem;
+}
+
+.fa-search {
+  color: white;
+  padding-right: 2rem;
+}
+
+.fa-shopping-cart {
+  color: white;
+}
+
+/* styling of second nav-bar */
+.overview {
+  background-position: center;
+  background-size: initial;
+  height: 8rem;
+  margin-top: 4.4rem;
+  background-color: gray;
+}
+
+.nav {
+  text-align: left;
+  padding-top: 5rem;
+}
+
+.nav-list-2 {
+  list-style: none;
+  display: flex;
+  align-items: right;
+  float: right;
+  padding-right: 8rem;
+}
+
+.nav-link-1 {
+  font-size: 1.3rem;
+  font-family: "inter-regular";
+  font-weight: lighter;
+  color: #fff;
+  transition: opacity 0.5s;
+  padding: 3.2rem;
+  margin: 0 -1rem;
+  margin-top: -3.3rem;
+}
+
+/* effect on link when cursor is placed */
+.nav-link-1:hover {
+  opacity: 0.7;
+}
+
+.fa-user {
+  padding-left: 2.8rem;
+  margin: -0.5rem;
+  color: white;
+}
+
+/* styling of info-bar */
+.update {
+  background-position: center;
+  background-size: initial;
+  height: 4rem;
+}
+
+.update-bar {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "inter-semibold-italic";
+  font-weight: lighter;
+  animation: text 3s 1;
+}
+
+/* styling of animated text */
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 20px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+/* styling of section-1 into-advertisement */
+.introduction {
+  border-top: none;
+  height: 78rem;
+  margin-top: -0.6rem;
+  background-size: initial;
+}
+
+.intro-model {
+  height: 73rem;
+  padding-left: 2rem;
+  width: 540px;
+  float: left;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.title-intro {
+  float: right;
+  padding-right: 18rem;
+  padding-top: 17rem;
+}
+
+.title-heading-intro {
+  font-family: "inter-bold";
+  font-size: 6.5rem;
+  font-weight: bolder;
+  letter-spacing: -0.009rem;
+}
+
+.title-sub-heading-intro {
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: #888;
+  font-weight: lighter;
+}
+
+.cta-link-intro {
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.cta-link-intro1 {
+  color: #66bbff;
+}
+
+.cta-link-intro2 {
+  color: #66bbff;
+  margin-left: 2rem;
+}
+
+.cta-link-intro1:hover {
+  border-bottom: 2px solid #66bbff;
+}
+
+.cta-link-intro2:hover {
+  border-bottom: 2px solid #66bbff;
+}
+
+/* styling of section 2 - trending products */
+.bestsellers {
+  border-top: none;
+  height: 78rem;
+  background-color: #f8f8ff;
+  margin-top: 2rem;
+  background-size: initial;
+}
+
+.bestseller-img {
+  width: 32rem;
+  height: 46rem;
+}
+
+.section-title {
+  text-align: center;
+  font-family: "inter-bold";
+  font-size: 4.5rem;
+  font-weight: bolder;
+  letter-spacing: -0.009rem;
+  padding-top: 2rem;
+}
+
+.cta-link-bestseller {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  font-family: "inter-semibold-italic";
+}
+
+.cta-link-trend1 {
+  color: #66bbff;
+}
+
+.cta-link-trend2 {
+  color: #66bbff;
+}
+
+.cta-link-trend1:hover {
+  border-bottom: 2px solid #66bbff;
+}
+
+.cta-link-trend2:hover {
+  border-bottom: 2px solid #66bbff;
+}
+
+.container_grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bestseller-tag {
+  font-family: "inter-extrabold";
+  font-size: 1.6rem;
+  padding-top: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.bestseller-name {
+  font-family: "inter-semibold";
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.bestseller-price {
+  font-size: 1.2rem;
+  font-family: "inter-semibold";
+}
+
+/* styling of 2nd advertisement/casual product */
+.featuring {
+  border-top: none;
+  height: 77rem;
+  margin-top: -0.6rem;
+  background-size: initial;
+  background-color: black;
+}
+
+.transition-model {
+  height: 73rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  width: 540px;
+  float: left;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.title-featuring {
+  float: right;
+  padding-right: 18rem;
+  padding-top: 25rem;
+  color: white;
+}
+
+.title-heading-featuring {
+  font-family: "inter-bold";
+  font-size: 3.5rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.title-sub-heading-featuring {
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: #888;
+  letter-spacing: 2px;
+}
+
+.cta-featuring {
+  padding-top: 3rem;
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.cta-featuring1 {
+  color: white;
+}
+
+.cta-featuring2 {
+  margin-left: 3.5rem;
+}
+
+.cta-featuring2:hover {
+  border-bottom: 2px solid;
+}
+
+/* styling of accessories section */
+.accessories {
+  border-top: none;
+  height: 79rem;
+  margin-top: 8rem;
+  background-size: initial;
+}
+
+.accessories-img {
+  width: 30rem;
+  height: 42rem;
+}
+
+.section-acce {
+  text-align: center;
+  font-family: "inter-bold";
+  font-size: 4.5rem;
+  font-weight: bolder;
+  letter-spacing: -0.009rem;
+  padding-top: 2rem;
+}
+
+.info-accessories {
+  padding-top: 3rem;
+  text-align: center;
+  font-family: "inter-regular";
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  padding-bottom: 2rem;
+}
+
+.cta-link-accessories {
+  padding-top: 2.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  font-family: "inter-semibold-italic";
+}
+
+.cta-link-acce1 {
+  color: #66bbff;
+}
+
+.cta-link-acce1:hover {
+  border-bottom: 2px solid #66bbff;
+}
+
+.container_grid-accessories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.accessories-tag {
+  font-family: "inter-extrabold";
+  font-size: 1.6rem;
+  padding-top: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.accessories-name {
+  font-family: "inter-semibold";
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.accessories-price {
+  font-size: 1.2rem;
+  font-family: "inter-semibold";
+}
+
+/* styling of the newsletter section */
+.newsletter {
+  border-top: none;
+  height: 35rem;
+  margin-top: 8rem;
+  background-size: initial;
+  text-align: center;
+}
+
+.newsletter-form {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  font-size: 2rem;
+  font-family: "inter-semibold";
+  text-align: center;
+}
+
+.newsletter-input {
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+  height: 2rem;
+}
+
+::placeholder {
+  font-size: 2rem;
+}
+
+.button-sub {
+  background-color: black;
+  color: white;
+  padding: 1.5rem;
+}
+
+/* styling of the about-us section */
+ .about-us{
+    border-top: none;
+    height: 28rem;
+    margin-top: 2rem;
+    background-size: initial;
+}
+
+.hr{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer-section-about{
+    padding-top: 6rem;
+    display: flex;
+    padding-left: 25rem;
+}
+
+.footer_text{
+    font-size: 4rem;
+    font-family: "inter-extrabold"; 
+    padding-right: 7rem;
+}
+
+.info-about{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+} 
+
+.fa-envelope{
+    padding-top: 7rem;
+    padding-left: 65rem;
+    font-size: 2rem;
+}
+
+.contact-mail{
+    font-size: 1.6rem;
+}
+
+/* styling the footer section */
+.footer{
+    border-top: none;
+    height: 30rem;
+    margin-top: 2rem;
+    background-size: initial;
+    background-color: black;
+    color: white;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-evenly; 
+    padding-right: 64rem;
+}
+
+.footer_title{
+    font-size: 1.7rem;
+    font-family: 'inter-semibold-italic';
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.nav-list-footer{
+    list-style: none;
+}
+
+.footer_link{
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding-top: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.nav-list-footer-social{
+    list-style: none;
+    display: flex;
+}
+
+.fa-facebook-square{
+    padding-right: 2rem;
+}
+
+.fa-instagram{
+    padding-right: 2rem;
+}
+
+.fa-facebook-square{
+    padding-right: 2rem;
+}
+
+.f-disclaimer{
+    padding-top: 5rem;
+    padding-left: 6.5rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: gray;
+}
