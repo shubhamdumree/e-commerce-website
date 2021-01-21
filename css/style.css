@@ -720,3 +720,151 @@ styling of first navbar */
   margin-top: 2rem;
   background-size: initial;
 }
+
+/* styling of log in page */
+.container-signin{
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  display: flex;
+  padding-left: 45rem;
+}
+
+.sign-up-info{
+  padding-left: 10rem;
+}
+
+.login-title{
+  font-size: 2.5rem;
+  font-family: 'inter-bold';
+  letter-spacing: 1px;
+  padding-bottom: 2rem;
+}
+
+.input-field{
+  border: none;
+  margin: 8px 0;
+  padding-bottom: 2.5rem;;
+}
+
+.form-field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid lightgray;
+  font-size: 2.5rem;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.title-sub-heading-info-log{
+  font-size: 1.4rem;
+  font-weight: lighter;
+  padding-bottom: 3rem;
+}
+
+.sign-in-page-button{
+  font-family: "inter-semibold";
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem;
+  border: none;
+  height: 4rem;
+  width: 14rem;
+}
+
+.register-info{
+  font-size: 1.4rem;
+  font-weight: lighter;
+  padding-bottom: 3rem;
+}
+
+.sign-in-page-button2{
+  font-family: "inter-semibold";
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem;
+  border: none;
+  height: 4rem;
+  width: 17rem;
+}
+
+/* styling of register page */
+.container-signup{
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+  text-align: center;
+}
+
+.signup-title{
+  font-size: 2.5rem;
+  font-family: "inter-semibold-italic";
+  padding-bottom: 4rem;
+}
+
+.signin-info2{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.signup-title2{
+  text-align: center;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+
+.cta-link-signup{
+  font-family: "inter-semibold";
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem;
+  border: none;
+  height: 4rem;
+}
+
+.input-field-register{
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.form-field-1{
+  font-family: inherit;
+  width: 20%;
+  border: 0;
+  border-bottom: 2px solid lightgray;
+  font-size: 2.5rem;
+  background: transparent;
+  transition: border-color 0.2s;
+  height: 4rem;
+}
+
+.email-info{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  font-family: "inter-semibold-italic";
+}
+
+.info-rules{
+  padding-top: 4rem;
+  font-size: 1.7rem;
+}
+
+.register-button-1{
+  padding-top: 4rem;
+}
+
+.register-button{
+  font-family: "inter-semibold";
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem;
+  border: none;
+  height: 4rem;
+  width: 20rem;
+}
