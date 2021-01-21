@@ -868,3 +868,115 @@ styling of first navbar */
   height: 4rem;
   width: 20rem;
 }
+
+/* styling of shopping-cart page */
+.shopping-bag{
+  height: 110rem;
+}
+
+.page-info{
+  display: flex;
+  padding-top: 5rem;
+  padding-left: 10rem;
+}
+
+.page-title-cart{
+  padding-top: 0.5rem;
+  font-size: 2.7rem;
+  font-family: "inter-extrabold";
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container_grid2{
+  padding-top: 5rem;
+  padding-left: 10rem;
+}
+
+.cart-img{
+  width: 30rem;
+  height: 40rem;
+}
+
+.fa-shopping-bag{
+  padding-left: 2.5rem;
+}
+
+.items-cart{
+  padding-top: 2rem;
+  padding-left: 10rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.bestseller-product2{
+  display: flex;
+}
+
+.bestseller-data1{
+  padding-left: 3rem;
+  padding-top: 10rem;
+}
+
+.cart-name{
+  font-family: 'inter-bold';
+  font-size: 1.5rem;
+}
+
+.cart-price{
+  font-family: 'inter-regular';
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.quan{
+  padding-bottom: 1rem;
+}
+
+.cart-quantity{
+  font-family: 'inter-regular';
+  font-size: 1.3rem;
+  padding-right: 1rem;
+}
+
+.cart-button{
+  border: 0;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'inter-regular';
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1100px 400px;
+}
+
+.cta-shopping-bag{
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+}
+
+.cta-shop{
+  font-family: "inter-semibold";
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem;
+  border: none;
+  height: 7rem;
+  width: 37rem;
+}
+
+.cta-checkout{
+  font-family: "inter-semibold";
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 0.8rem;
+  height: 7rem;
+  width: 37rem;
+  border-color: black;
+}
