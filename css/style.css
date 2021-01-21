@@ -619,14 +619,16 @@ styling of first navbar */
 
 .fa-facebook-square{
     padding-right: 2rem;
+    color: white;
 }
 
 .fa-instagram{
     padding-right: 2rem;
+    color: white;
 }
 
-.fa-facebook-square{
-    padding-right: 2rem;
+.fa-twitter-square{
+  color: white;
 }
 
 .f-disclaimer{
@@ -687,7 +689,7 @@ styling of first navbar */
 }
 
 .cta-buy{
-  margin-left: 18rem;
+  margin-left: 24rem;
   font-family: "inter-semibold";
   background-color: black;
   color: white;
@@ -874,7 +876,7 @@ styling of first navbar */
   height: 110rem;
 }
 
-.page-info{
+.page-info-cart{
   display: flex;
   padding-top: 5rem;
   padding-left: 10rem;
@@ -914,7 +916,7 @@ styling of first navbar */
   display: flex;
 }
 
-.bestseller-data1{
+.bestseller-data-cart{
   padding-left: 3rem;
   padding-top: 10rem;
 }
@@ -979,4 +981,82 @@ main{
   height: 7rem;
   width: 37rem;
   border-color: black;
+} 
+
+
+/* styling of shopping-cart page */
+.user-account{
+  height: 60rem;
 }
+
+.fa-user{
+  color:  black;
+}
+
+.page-info-account{
+  padding-left: 8rem;
+  padding-top: 5rem;
+  display: flex;
+}
+
+.page-title-account{
+  padding-top: 1rem;
+  padding-left: 3rem;
+  font-size: 2rem;
+  font-family: 'inter-semibold-italic';
+  letter-spacing: 1px;
+}
+
+.sub-title-account{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 8rem;
+  font-size: 2rem;
+  font-family: "inter-bold";
+}
+
+.des-account{
+  padding-top: 2rem;
+  padding-left: 8rem;
+  font-family: "inter-regular";
+}
+
+.cta-user-button1{
+  padding-top: 9rem;
+  padding-left: 8rem;
+  padding-bottom: 2rem;
+}
+
+.cta-user-button2{
+  padding-top: 1rem;
+  padding-left: 8rem;
+  padding-bottom: 3rem;
+}
+
+.user-shop{
+  font-family: "inter-semibold";
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 0.8rem;
+  border: none;
+  height: 5rem;
+  width: 33rem;
+}
+
+.user-cart{
+  font-family: "inter-semibold";
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 0.8rem;
+  height: 5rem;
+  width: 33rem;
+  border-color: black;
+}
+
+.section2{
+  padding-top: 9rem;
+  padding-left: 6rem;
+}
+
