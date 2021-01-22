@@ -1,83 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    /* common functions to be used in all pages */
+    /*Include the PHP functions to be used on the page */
+    include('PHP/common.php'); 
 
-<head>
+    outputHeader("ULX | ACCESSORIES");
 
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="website icon" href="images/logo.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>ULX | HOME</title>
+    outputBannerNavigation("ACCESSORIES");
 
-</head>
+    /* common function to display mini nav-bar on all pages */
+    outputOverview();
 
-<body>
+    outputInformation();
+    
+?>
 
-  <header>
-
-    <div class="container">
-      <nav class="nav-logo">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="index.html" class="nav-logo">U L X</a>
-          </li>
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a href="men.html" class="nav-link">MEN</a>
-          </li>
-          <li class="nav-item">
-            <a href="women.html" class="nav-link">WOMEN</a>
-          </li>
-          <li class="nav-item">
-            <a href="accessories.html" class="nav-link">ACCESSORIES</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link about">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a href="#"><i class="fa fa-search"></i></a>
-          </li>
-          <li class="nav-item">
-            <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-  </header>
-
-  <!-- second navigation bar -->
-  <section class="hero overview">
-
-    <div class="container-2">
-      <nav class="nav">
-        <ul class="nav-list-2">
-          <li class="nav-item">
-            <a href="login.html" class="nav-link-1">LOG IN</a>
-          </li>
-          <li class="nav-item">
-            <a href="register.html" class="nav-link-1">SIGN UP</a>
-          </li>
-          <li class="nav-item">
-            <a href="account.html"><i class="fa fa-user fa-2x"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-  </section>
-
-    <!-- info bar -->
-    <section class="hero update">
-        <div class="container">
-            <nav class="nav-update">
-                <h3 class="update-bar">FREE WORLWIDE SHIPPING OVER 50 EUR</h3>
-            </nav>
-        </div>
-    </section>
-
+<!-- displaying accessories in css flex style-->
     <section class="hero products-accessories">
         <nav class="page-info">
             <h2 class="page-title-men">U L X &nbsp ACCESSORIES ></h2>
@@ -85,6 +22,7 @@
         </nav>
 
         <div class="section-accessories">
+          <!--quote-->
             <p class="info-accessories">Accessories add finess to formal and casual outfits.
                 From belts to hats, scarves to sunglasses, wallets to <br /> watches, small additions such as these
                 contribute
@@ -102,7 +40,7 @@
                     <h3 class="accessories-tag">NEW</h3>
                     <h3 class="accessories-name">RIGID NECKLACE WITH NATURAL PEARLS</h3>
                     <span class="accessories-price">19.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -116,7 +54,7 @@
                     <h3 class="accessories-tag">LIMITED</h3>
                     <h3 class="accessories-name">CHAIN LINK NECKLACE</h3>
                     <span class="accessories-price">12.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -132,7 +70,7 @@
                     <h3 class="accessories-tag">NEW</h3>
                     <h3 class="accessories-name">EMBOSSED MISMATCHED EARRINGS</h3>
                     <span class="accessories-price">9.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -146,7 +84,7 @@
                     <h3 class="bestseller-tag1">NEW</h3>
                     <h3 class="bestseller-name1">BROWN LEATHER ANKLE BOOTS</h3>
                     <span class="bestseller-price1">79.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -161,7 +99,7 @@
                     <h3 class="bestseller-tag1">LIMITED EDITION</h3>
                     <h3 class="bestseller-name1">CORDUROY CAP WITH PATCH</h3>
                     <span class="bestseller-price1">15.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -178,7 +116,7 @@
                         RUBBERISED BACKPACK
                     </h3>
                     <span class="bestseller-price1">49.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -197,7 +135,7 @@
                     <h3 class="bestseller-tag1">NEW</h3>
                     <h3 class="bestseller-name1">TAUPE GREY ANKLE BOOTS</h3>
                     <span class="bestseller-price1">69.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -212,7 +150,7 @@
                     <h3 class="bestseller-tag1">NEW</h3>
                     <h3 class="bestseller-name1">LEATHER ESPADRILLES WITH JUTE SOLES</h3>
                     <span class="bestseller-price1">25.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -229,7 +167,7 @@
                         TOPSTITCHED LEATHER BELT
                     </h3>
                     <span class="bestseller-price1">25.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -249,7 +187,7 @@
                     <h3 class="bestseller-name1">
                         HEADBAND WITH KNOT DETAIL TRF</h3>
                     <span class="bestseller-price1">9.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -264,7 +202,7 @@
                     <h3 class="bestseller-tag1">NEW</h3>
                     <h3 class="bestseller-name1">NATURAL PEARL EARRINGS</h3>
                     <span class="bestseller-price1">12.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -281,7 +219,7 @@
                         SPARKLY AND FAUX PEARL EARRINGS
                     </h3>
                     <span class="bestseller-price1">12.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -298,7 +236,7 @@
                         HEXAGONAL ACETATE SUNGLASSES
                     </h3>
                     <span class="bestseller-price1">39.95 EUR</span>
-                    <form action="cart.html">
+                    <form action="cart.php">
                         <button href="#" class="cta-buy">BUY NOW</button>
                     </form>
                 </div>
@@ -307,98 +245,12 @@
         </div>
     </section>
 
-     <!-- section -about us of the main page general information. -->
-  <section class="hero about-us" id="about">
-    <hr>
-    <div class="container-footer-content">
-      <div class="footer-section-about">
-        <h3 class="footer_text">U L X</h3>
-        <p class="info-about">
-          ULX is one of the largest international fashion companies. It belongs to MDX, one of the world’s largest
-          distribution groups. <br />
-          The customer is at the heart of our unique business model, which includes design, production, distribution and
-          sales through our <br />
-          extensive retail network.
-        </p>
-      </div>
-      <span class="contact-mail"><i class="fa fa-envelope fa-xs"></i> &nbsp; info@ulxstore.com</span>
-    </div>
+<?php 
+    /* common functions to be used in all pages */
 
-  </section>
-
-  <!-- section -- footer -->
-  <footer class="hero footer">
-
-    <div class="footer_container">
-      <div class="footer_box">
-        <h3 class="footer_title">COMPANY</h3>
-        <ul class="nav-list-footer">
-          <li>
-            <a href="#about" class="footer_link">ABOUT US</a>
-          </li>
-          <li>
-            <a href="#" class="footer_link">NEWSLETTER</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer_box">
-        <h3 class="footer_title">ACCESS</h3>
-        <ul class="nav-list-footer">
-          <li>
-            <a href="men.html" class="footer_link">MEN</a>
-          </li>
-          <li>
-            <a href="women.html" class="footer_link">WOMEN</a>
-          </li>
-          <li>
-            <a href="accessories.html" class="footer_link">ACCESSORIES</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer_box-help">
-        <h3 class="footer_title">HELP</h3>
-        <ul class="nav-list-footer">
-          <li>
-            <a href="#" class="footer_link">PRODUCT</a>
-          </li>
-          <li>
-            <a href="account.html" class="footer_link">MY ACCOUNT</a>
-          </li>
-          <li>
-            <a href="cart.html" class="footer_link">VIEW YOUR CART</a>
-          </li>
-          <li><a href="#" class="footer_link">PURCHASE CONDITIONS</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer_box-social">
-        <h3 class="footer_title">FOLLOW</h3>
-        <ul class="nav-list-footer-social">
-          <li class="footer_social">
-            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-3x"></i></a>
-          </li>
-          <li class="footer_social">
-            <a href="https://www.instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>
-          </li>
-          <li class="footer_social">
-            <a href="https://twitter.com/"><i class="fa fa-twitter-square fa-3x"></i></a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="f-disclaimer">
-      Copyright ULX © 2020 &nbsp; Designed by Shubham Dumree.<br />
-      All rights Reserved | Sales & Refunds | Disclaimer & Privacy Policy |
-      Legal
-    </div>
-
-  </footer>
-
-</body>
-
-</html>
+    /* outputs the about us info */
+    outputAboutUs();
+    /* outputs the footer */
+    outputFooter();
+   
+?>

@@ -99,6 +99,11 @@ styling of first navbar */
   transition: opacity 0.5s;
 }
 
+/* selected page is highlighted */
+.active{
+  text-decoration: underline;;
+}
+
 /* effect on link when cursor is placed */
 .nav-link:hover {
   opacity: 0.7;
